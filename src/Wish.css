@@ -1,0 +1,228 @@
+
+.birthday-container{
+    /* background: linear-gradient( rgb(0, 128, 96),rgb(0, 128, 79),black); */
+    background: linear-gradient( rgb(128, 0, 32),rgba(128, 26, 0, 0.671),rgba(0, 0, 0, 0.986));
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.top-images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    animation: topImagesAnimation 2s  infinite;
+    
+    
+}
+.top-left-image{
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: topLeftImageAnimation 2s  infinite;
+    object-fit: cover;
+    margin-bottom: 50px;
+    
+    
+}
+.top-right-image{
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: topRightImageAnimation 2s infinite;
+    margin-bottom: 50px;
+    
+
+
+}
+
+.middle-images{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    animation: middleImagesAnimation 2s infinite;
+    margin-bottom: 50px;
+}
+.middle-left-image{
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: middleLeftImagesAnimation 2s infinite;
+    margin-left: 80px;
+}
+.middle-right-image{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: middleRightImagesAnimation 2s infinite;
+    margin-right: 80px;
+    
+}
+
+.birthday-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    z-index: 1;
+}
+.bottom-images{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-right: 200px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    animation: bottomImagesAnimation 2s  infinite;
+}
+.bottom-left-image{
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: bottomLeftImagesAnimation 2s  infinite;
+}
+.bottom-right-image{
+    width: 250px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: bottomRightImagesAnimation 2s  infinite;
+    object-fit: cover;
+}
+
+@keyframes topImagesAnimation{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes topLeftImageAnimation{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(-10px);
+    }
+
+}
+@keyframes topRightImageAnimation{
+    0%,100%{
+        transform: translateX(0);
+    }
+    
+    50%{
+        transform: translateX(-20px);
+    }
+
+}
+@keyframes middleImagesAnimation{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes middleLeftImagesAnimation{
+    0%{
+        transform: skew(0deg);
+    }   
+    100%{
+        transform: skew(25deg);
+    }
+
+}
+@keyframes middleRightImagesAnimation{
+    0%{
+        transform: skew(0deg);
+    }   
+    100%{
+        transform: skew(25deg);
+    }
+
+}
+@keyframes bottomImagesAnimation{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes bottomLeftImagesAnimation{
+    0%{
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(100%);
+    }
+
+}
+@keyframes bottomRightImagesAnimation{
+    0%{
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+.btn{
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
