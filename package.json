@@ -1,6 +1,7 @@
 {
   "name": "bdy",
   "version": "0.1.0",
+  "homepage": "https://your-username.github.io/your-repo-name",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
