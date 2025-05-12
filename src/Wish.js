@@ -33,7 +33,7 @@ function Wish(){
                 <p>As I know you, being surrounded by these people would make you the 
                     happiest person in this world. 
                     So I made a small gesture on your special day....</p>
-                <p><i style={{color:"white", fontSize:"30px"}}>Wishing my bestest a very Happy Birthday!</i></p>
+                <p><i style={{color:"white", fontSize:"30px"}}>Wishing my bestest buddy a very Happy Birthday!</i></p>
                 <p>Enjoy your day to the fullest!!!</p>
                 <Link to={"/asset"}><button className='btn'>Open</button></Link>
 
